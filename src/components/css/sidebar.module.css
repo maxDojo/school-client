@@ -1,4 +1,26 @@
 .sidebar {
-  background-color: #0e3a0a;
-  font-size: 1.2em;
+  background-color: #0d094d;
+  height: 100vh;
+}
+.selectItem {
+  color: azure;
+  /* font-weight: 700; */
+  text-decoration: none;
+  text-align: left;
+  padding-left: 2.5em;
+  /* border-radius: 0.2em; */
+  margin-bottom: 0.8em;
+  cursor: pointer;
+}
+.selectItem:hover {
+  background-color: azure;
+  color: #0d094d;
+}
+.selectItem:active {
+  background-color: azure;
+  color: greenyellow;
+}
+.selectItemIcon {
+  font-size: 0.6em;
+  margin-right: 1em;
 }

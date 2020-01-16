@@ -8,7 +8,7 @@ const Container = () => {
   return (
     <div className="container-fluid">
       <div className="row">
-        <div className="col-lg-2 col md-3 m-0">
+        <div className="col-lg-2 col md-3 m-0" height="1000px">
           <Sidebar />
         </div>
         <div className="col-lg-10 col-md-9 m-0">
