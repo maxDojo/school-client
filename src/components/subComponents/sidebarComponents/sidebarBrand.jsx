@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const SidebarBrand = props => {
   return (
     <a
-      class="sidebar-brand d-flex align-items-center justify-content-center"
+      className="sidebar-brand d-flex align-items-center justify-content-center"
       style={{
         textDecoration: "none",
         fontVariant: "small-caps",
@@ -13,10 +13,10 @@ const SidebarBrand = props => {
         marginBottom: "4em"
       }}
     >
-      <div class="sidebar-brand-icon">
+      <div className="sidebar-brand-icon rotate-n-15">
         <FontAwesomeIcon icon={props.icon} />
       </div>
-      <div class="sidebar-brand-text mx-3">{props.children}</div>
+      <div className="sidebar-brand-text mx-3">{props.children}</div>
     </a>
   );
 };

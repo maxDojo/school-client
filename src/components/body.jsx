@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Card from "./subComponents/bodyComponents/card";
 
 class Body extends Component {
   constructor(props) {
@@ -9,7 +10,36 @@ class Body extends Component {
     return (
       <div className="container-fluid">
         <div className="row">
-          <div className="col-md-10">Main Content Area</div>
+          <div className="col-md-10">
+            <div className="card-deck">
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+            </div>
+            <div className="card-deck">
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+            </div>
+            <div className="card-deck">
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+            </div>
+            <div className="card-deck">
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+            </div>
+          </div>
           <div className="col-md-2">Secondary Content Area</div>
         </div>
       </div>

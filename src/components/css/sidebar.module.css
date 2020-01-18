@@ -1,5 +1,5 @@
 .sidebar {
-  background-color: #0d094d;
+  background-color: rgb(15, 75, 10);
   height: 100vh;
 }
 .selectItem {
@@ -13,8 +13,8 @@
   cursor: pointer;
 }
 .selectItem:hover {
-  background-color: azure;
-  color: #0d094d;
+  background-color: rgba(6, 6, 6, 0);
+  color: rgb(192, 219, 36);
 }
 .selectItem:active {
   background-color: azure;

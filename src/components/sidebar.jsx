@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import styles from "./css/sidebar.module.css";
-import SidebarSelect from "./subComponents/sidebarSelect";
-import SidebarBrand from "./subComponents/sidebarBrand";
+import SidebarItem from "./subComponents/sidebarComponents/sidebarSelect";
+import SidebarBrand from "./subComponents/sidebarComponents/sidebarBrand";
+import SidebarCollapse from "./subComponents/sidebarComponents/sidebarCollapse";
 
 class Sidebar extends Component {
   constructor(props) {
@@ -15,19 +16,30 @@ class Sidebar extends Component {
       >
         {/* <ul className="d-flex flex-column"> */}
         <SidebarBrand icon="school">School Administration</SidebarBrand>
-        <SidebarSelect icon="home">Home</SidebarSelect>
-        <SidebarSelect icon="book-reader">Students</SidebarSelect>
-        <SidebarSelect icon="briefcase">Staff</SidebarSelect>
-        <SidebarSelect icon="eye">Parents</SidebarSelect>
-        <SidebarSelect icon="graduation-cap">Academics</SidebarSelect>
-        <SidebarSelect icon="clock">Attendance</SidebarSelect>
-        <SidebarSelect icon="pen-alt">Exam</SidebarSelect>
-        <SidebarSelect icon="money-check-alt">Payments</SidebarSelect>
-        <SidebarSelect icon="mail-bulk">Mail</SidebarSelect>
-        <SidebarSelect icon="book">Accounting</SidebarSelect>
-        <SidebarSelect icon="bus-alt">Transport</SidebarSelect>
-        <SidebarSelect icon="book-open">Library</SidebarSelect>
-        <SidebarSelect icon="lock">Admin</SidebarSelect>
+        <SidebarItem icon="home">Home</SidebarItem>
+        <SidebarItem icon="book-reader">Students</SidebarItem>
+        <SidebarItem icon="briefcase">Staff</SidebarItem>
+        <SidebarItem icon="eye">Parents</SidebarItem>
+        <SidebarItem icon="graduation-cap">Academics</SidebarItem>
+        <SidebarCollapse
+          icon="graduation-cap"
+          ddHeader="Academics"
+          ddItems={[
+            { name: "Courses" },
+            { name: "Programs" },
+            { name: "Extras" }
+          ]}
+        >
+          Academics
+        </SidebarCollapse>
+        <SidebarItem icon="clock">Attendance</SidebarItem>
+        <SidebarItem icon="pen-alt">Exam</SidebarItem>
+        <SidebarItem icon="money-check-alt">Payments</SidebarItem>
+        <SidebarItem icon="mail-bulk">Mail</SidebarItem>
+        <SidebarItem icon="book">Accounting</SidebarItem>
+        <SidebarItem icon="bus-alt">Transport</SidebarItem>
+        <SidebarItem icon="book-open">Library</SidebarItem>
+        <SidebarItem icon="lock">Admin</SidebarItem>
         {/* </ul> */}
       </ul>
     );
