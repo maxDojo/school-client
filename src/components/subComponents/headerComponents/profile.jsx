@@ -18,8 +18,9 @@ class Profile extends Component {
             {this.props.name}
           </span>
           <img
-            className="img-profile rounded-circle sm"
+            className="img-profile rounded-circle"
             src={this.props.image}
+            style={{ width: 32, height: 32 }}
           />
         </a>
         {/* <!-- Dropdown - User Information --> */}

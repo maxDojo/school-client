@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import styles from "../../css/body.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class Card extends Component {
   constructor(props) {
@@ -8,15 +9,9 @@ class Card extends Component {
   }
   render() {
     return (
-      <div className="card border-primary mb-3" style={{ maxWidth: "20%" }}>
-        {/* <div className="card-header">Header</div> */}
-        <div className="card-body text-primary">
-          <h5 className="card-title">Primary card title</h5>
-          <p className="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-        </div>
+      <div className={`${styles.gridItem} shadow`}>
+        <FontAwesomeIcon icon={this.props.icon} className={styles.gridIcon} />
+        <h5 className={styles.gridLabel}>{this.props.children}</h5>
       </div>
     );
   }

@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import styles from "../../css/sidebar.module.css";
 
 const SidebarCollapse = props => {
   return (
-    <li className="nav-item">
+    <li className={`nav-item ${styles.selectItem}`}>
       <a
         className="nav-link collapsed"
         dataToggle="collapse"

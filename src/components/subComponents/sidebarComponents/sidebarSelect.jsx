@@ -14,7 +14,7 @@ const SidebarItem = props => {
       <hr className="sidebar-divider my-0" />
     </React.Fragment> */}
       {/* <React.Fragment> */}
-      <li className="nav-item-active">
+      <li className={`${styles.selectItem} nav-item-active`}>
         <a className="nav-link">
           <FontAwesomeIcon icon={props.icon} />
           <span>{props.children}</span>
